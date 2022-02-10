@@ -1,0 +1,74 @@
+.add-student-page-container {
+  width: 50%;
+  margin: 0 auto;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+  padding: 10px 0 50px 0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.add-student-page-title {
+  text-align: center;
+}
+
+.add-student-page-title h1 {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Bitter", serif;
+  padding-top: 20px;
+  color: #333;
+  font-size: 30px;
+}
+
+#add-student-form {
+  margin-top: 30px;
+}
+
+.add-student-form-design {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.single-add-student-input-area {
+  width: 47.5%;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.single-add-student-input-area label {
+  color: gray;
+}
+
+.single-add-student-input-area input {
+  display: block;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px 0 10px 15px;
+  margin-top: 3px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.add-student-form-design input[type="submit"] {
+  display: inline-block;
+  padding: 20px 25px;
+  font-size: 14px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-image: linear-gradient(to right, #ff0090, blue);
+  color: #fff;
+  margin-top: 40px;
+  cursor: pointer;
+}

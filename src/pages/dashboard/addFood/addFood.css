@@ -1,0 +1,77 @@
+.add-new-food-section {
+  width: 50%;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+  padding: 50px 60px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.add-new-food-section-title h2 {
+  text-transform: capitalize;
+  font-family: "Cormorant", serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+.add-food-area {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.add-food-form-design {
+  width: 100%;
+}
+.add-food-form-design label {
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+.add-food-form-design input[type="text"],
+.add-food-form-design input[type="number"],
+.add-food-form-design input[list="category"] {
+  width: 100%;
+  padding: 15px 0 15px 15px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  border: 2px solid #eee;
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+#add-new-food-button {
+  padding: 14px 30px;
+  position: relative;
+  bottom: -15px;
+  left: 80%;
+  background-color: dodgerblue;
+  color: #fff;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  cursor: pointer;
+  box-shadow: 0 0 40px #eee;
+}

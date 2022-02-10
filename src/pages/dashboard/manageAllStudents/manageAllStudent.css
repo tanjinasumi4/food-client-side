@@ -1,0 +1,31 @@
+.show-status-update-button {
+  width: 100%;
+  position: relative;
+}
+
+.status-update-button {
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+
+.status-update-button button {
+  display: inline-block;
+  padding: 12px 25px;
+  margin-left: 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+}
+
+.status-update-button button:first-child {
+  background-color: green;
+  color: #fff;
+}
+.status-update-button button:last-child {
+  background-color: red;
+  color: #fff;
+}
