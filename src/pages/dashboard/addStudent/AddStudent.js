@@ -17,7 +17,7 @@ const AddStudent = () => {
 
     const handleForm = e => {
         e.preventDefault();
-        axios.post(`http://localhost:5000/add-student`, studentData)
+        axios.post(`https://warm-beach-60734.herokuapp.com/add-student`, studentData)
             .then((response) => {
                 if (response.data.insertedId) {
                     swal({

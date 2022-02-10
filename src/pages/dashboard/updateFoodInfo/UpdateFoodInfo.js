@@ -11,7 +11,7 @@ const UpdateFoodInfo = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get(`http://localhost:5000/all-foods?foodId=${foodId}`)
+        axios.get(`https://warm-beach-60734.herokuapp.com/all-foods?foodId=${foodId}`)
             .then((response) => {
                 setFoodData(response.data);
             })
@@ -35,7 +35,7 @@ const UpdateFoodInfo = () => {
     const handleSubmit = e => {
         e.preventDefault();
         delete foodData._id;
-        axios.patch(`http://localhost:5000/update-food-info?foodId=${foodId}`, foodData)
+        axios.patch(`https://warm-beach-60734.herokuapp.com/update-food-info?foodId=${foodId}`, foodData)
             .then((response) => {
                 if (response.data.modifiedCount) {
                     swal({

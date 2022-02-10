@@ -11,7 +11,7 @@ const UpdateStudentInfo = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get(`http://localhost:5000/single-student?studentId=${studentId}`)
+        axios.get(`https://warm-beach-60734.herokuapp.com/single-student?studentId=${studentId}`)
             .then((response) => {
                 setStudentData(response.data);
             })
@@ -35,7 +35,7 @@ const UpdateStudentInfo = () => {
     const handleForm = e => {
         e.preventDefault();
         delete studentData._id;
-        axios.patch(`http://localhost:5000/update-student-info?studentId=${studentId}`, studentData)
+        axios.patch(`https://warm-beach-60734.herokuapp.com/update-student-info?studentId=${studentId}`, studentData)
             .then((response) => {
                 if (response.data.modifiedCount) {
                     swal({

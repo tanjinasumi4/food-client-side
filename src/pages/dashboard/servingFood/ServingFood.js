@@ -46,7 +46,7 @@ const ServingFood = () => {
     }
 
     useEffect(() => {
-        axios.get(`http://localhost:5000/all-foods`)
+        axios.get(`https://warm-beach-60734.herokuapp.com/all-foods`)
             .then((response) => {
                 setAllFoods(response.data);
             })
@@ -55,7 +55,7 @@ const ServingFood = () => {
     const handleSearch = e => {
         e.preventDefault();
         setIsLoading(true);
-        axios.get(`http://localhost:5000/single-student?studentRoll=${studentRoll}`)
+        axios.get(`https://warm-beach-60734.herokuapp.com/single-student?studentRoll=${studentRoll}`)
             .then((response) => {
                 setStudent(response.data);
                 setIsLoading(false);
@@ -90,10 +90,10 @@ const ServingFood = () => {
         updateServingData.roll = studentRoll;
         updateServingData.status = 'server';
         const { roll, date, shift } = updateServingData;
-        axios.get(`http://localhost:5000/serving-food?roll=${roll}&&date=${date}&&shift=${shift}`)
+        axios.get(`https://warm-beach-60734.herokuapp.com/serving-food?roll=${roll}&&date=${date}&&shift=${shift}`)
             .then((response) => {
                 if (response.data === null) {
-                    axios.post(`http://localhost:5000/add-serving-food`, updateServingData)
+                    axios.post(`https://warm-beach-60734.herokuapp.com/add-serving-food`, updateServingData)
                         .then((response) => {
                             if (response.data.insertedId) {
                                 swal({

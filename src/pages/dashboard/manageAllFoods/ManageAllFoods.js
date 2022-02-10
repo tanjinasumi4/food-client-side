@@ -24,7 +24,7 @@ const ManageAllFoods = () => {
 
     useEffect(() => {
         setDataLoading(true);
-        axios.get(`http://localhost:5000/all-foods?currentPage=${currentPage}&&size=${size}`)
+        axios.get(`https://warm-beach-60734.herokuapp.com/all-foods?currentPage=${currentPage}&&size=${size}`)
             .then((response) => {
                 setAllFoods(response.data.allFoods);
                 const totalPageNumber = Math.ceil(response.data.count / size);
@@ -53,7 +53,7 @@ const ManageAllFoods = () => {
         })
             .then((value) => {
                 if (value) {
-                    axios.delete(`http://localhost:5000/delete-single-food?foodId=${id}`)
+                    axios.delete(`https://warm-beach-60734.herokuapp.com/delete-single-food?foodId=${id}`)
                         .then((response) => {
                             if (response.data.deletedCount) {
                                 swal({

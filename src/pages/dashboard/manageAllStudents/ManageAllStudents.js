@@ -25,7 +25,7 @@ const ManageAllStudents = () => {
 
     useEffect(() => {
         setDataLoading(true);
-        axios.get(`http://localhost:5000/all-students?currentPage=${currentPage}&&size=${size}`)
+        axios.get(`https://warm-beach-60734.herokuapp.com/all-students?currentPage=${currentPage}&&size=${size}`)
             .then((response) => {
                 setAllStudents(response.data.allFoods);
                 const totalPageNumber = Math.ceil(response.data.count / size);
@@ -54,7 +54,7 @@ const ManageAllStudents = () => {
         })
             .then((value) => {
                 if (value) {
-                    axios.delete(`http://localhost:5000/delete-single-student?studentId=${id}`)
+                    axios.delete(`https://warm-beach-60734.herokuapp.com/delete-single-student?studentId=${id}`)
                         .then((response) => {
                             if (response.data.deletedCount) {
                                 swal({
@@ -97,7 +97,7 @@ const ManageAllStudents = () => {
     };
 
     const handleUpdateStatus = (status) => {
-        axios.patch(`http://localhost:5000/update-student-status?studentsId=${selectStudent}`, { status: status })
+        axios.patch(`https://warm-beach-60734.herokuapp.com/update-student-status?studentsId=${selectStudent}`, { status: status })
             .then((response) => {
                 if (response.data.modifiedCount) {
                     swal({
